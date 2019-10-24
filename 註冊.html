@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" action="logup.php">
+    帳號:<input type="text" name="id"><br>
+    <!--radio(多選一)-->
+    性別:<input type="radio" name="sex" value="M" checked>男
+         <input type="radio" name="sex" value="F">女 <br>   
+
+    <!--checkbox(多選多)-->   
+    興趣:<input type="checkbox" name="interest" value="pe">體育
+         <input type="checkbox" name="interest" value="ch" checked>國文
+         <input type="checkbox" name="interest" value="me">數學 <br>
+
+    <!--下拉式選單-->
+    居住地:<select name="County">
+           <option value="tn">桃園</option>
+           <option value="hu" selected>新竹</option>
+           <option value="mi">苗栗</option> 
+          </select><br>
+    自傳:<br><textarea name="autobiography" rows="10" cols="50"></textarea><br>
+     <input type="submit" value="註冊">   <input type="reset" value="清除">
+    </form>
+</body>
+</html>
